@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portail Emaj</title>
+  <link rel="stylesheet" href="styles1.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <aside class="sidebar">
+    <div class="sidebar-title">
+      <div class="logo-wrapper">
+        <img src="images/LOGO_AIDE_JURIDIQUE.png" alt="Logo" class="logo">
+      </div>
+      <div class="title-text">
+        Portail<br>
+        <span>Navigation</span>
+      </div>
+    </div>
+  </aside>
+
+
+
+  <div class="container">
+
+    <main class="content">
+  <section class="box">
+  <h3>Outils internes</h3>
+  <a href="https://csj20.sharepoint.com/sites/service-de-recherche">
+    <img class="ImageLogo" src="images/AmicusLogo.png" alt="Logo Amicus">
+    Amicus
+  </a>
+
+
+  <a href="https://b12.apprentx.rocks/emaj/login?redirect=/emaj/sequence/9809">
+    <img class="ImageLogo" src="images/B-12Logo.png" alt="Logo B-12">
+    B-12
+  </a>
+
+
+
+  <a href="https://aidejuridique.consigno.com/login">
+    <img class="ImageLogo" src="images/ConsignoLogo.png" alt="Logo Consigno">
+    ConsignO
+  </a>
+
+  <a href="https://adminccjm1.zohocreatorportal.com/">
+    <img class="ImageLogo" src="images/FIRLogo.png" alt="Logo FIR">
+    FIR
+  </a>
+
+  <a href="https://www.csj.qc.ca/Intranet/Login.aspx">
+    <img class="ImageLogocsj" src="images/IntranetLogo.png" alt="Logo Intranet">
+    Intranet de la CSJ
+  </a>
+
+  <a href="https://www.microsoft365.com/">
+    <img class="ImageLogo"
+      src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20230815.002/assets/brand-icons/product/svg/m365_48x1.svg"
+      alt="Logo Microsoft 365">
+    M365 en ligne
+  </a>
+
+  <a href="https://csj20.sharepoint.com/sites/Outildaidealanalysedeladmissibilite2/SitePages/TrainingHome.aspx">
+    <img class="ImageLogoSiaa" src="images/getsitelogo.png" alt="Logo SIAA">
+    SIAA
+  </a>
+</section>
+<section class="box">
+  <h3>Ressources humaines</h3>
+
+  <a href="https://www.beneva.ca/fr/espace-client">
+    <img class="ImageLogo" src="images/BenevaLogo.png" alt="Logo Beneva">
+    Beneva
+  </a>
+
+  <a href="https://www.rrq.gouv.qc.ca/fr/services/services_en_ligne/mon_dossier_regie/Pages/mon_dossier_regie.aspx">
+    <img class="ImageLogo" src="images/GqcLogo.png" alt="Logo  Retraite-Québec">
+    Retraite-Québec
+  </a>
+
+  <a href="https://www.retraitequebec.gouv.qc.ca/fr/publications/nos-programmes/rrsp/Pages/rrsp.aspx">
+    <img class="ImageLogo" src="images/GqcLogo.png" alt="Logo RREGOP">
+    RREGOP
+  </a>
+
+  <a href="#">
+     <img class="ImageLogo" src="images/SOFELogo.png" alt="Logo SOFE Paye Montréal">
+     SOFE Paye Montréal
+  </a>
+  
+
+  <a href="https://clients.nethris.com/webportal/UserLogin.aspx">
+    <img class="ImageLogo" src="images/nethrisLogo.png" alt="Logo nethris">
+    Suite Nethris
+  </a>
+
+  <a href="https://app.one.telushealth.com">
+    <img class="ImageLogo" src="images/TelusLogo.png" alt="Logo Telus Santé">
+    Telus Santé
+  </a>
+</section>
+
+<section class="box">
+  <h3>Sites gérés par le Centre</h3>
+
+  <div class="custom-dropdown-inline">
+    <label for="region">Région :</label>
+    <select id="region" onchange="updateLinks(this.value)">
+      <option value="" disabled selected>Sélectionnez une région</option>
+      <option value="region1">Région 1</option>
+      <option value="region2">Région 2</option>
+      <option value="region3">Région 3</option>
+      <option value="region4">Région 4</option>
+    </select>
+  </div>
+
+  <div id="links">
+    <a id="link1" href="#" onclick="return checkRegion(event)">Bureau virtuel (VPN)</a>
+    <a id="link2" href="#" onclick="return checkRegion(event)">Intranet</a>
+    <a id="link3" href="#" onclick="return checkRegion(event)">JurisEvolution</a>
+    <a id="link4" href="#" onclick="return checkRegion(event)">Plateforme d’échange</a>
+    <a id="link5" href="#" onclick="return checkRegion(event)">SharePoint des dossiers client</a>
+  </div>
+
+  <div style="display:flex; flex-direction: column; align-items: center;text-align: center;color: red; margin-top: 30px; font-weight: bold;font-size: 14.9px;">
+    <p>Veuillez sélectionner une région avant </p>
+    <p style="text-align: center;">d'accéder aux liens.</p>
+  </div>
+
+  <p id="error-message" style="display:none; color: red; margin-top: 20px; font-weight: bold;">
+    Veuillez sélectionner une région avant d'accéder aux liens.
+  </p>
+</section>
+
+
+
+
+<section class="box">
+  <h3>Sites juridiques</h3>
+
+  <a href="https://www.barreau.qc.ca/fr/">
+    <img class="ImageLogo" src="images/BureauDuQuebecLogo.png" alt="Logo Barreau du Québec">
+    Barreau du Québec
+  </a>
+
+  <a href="https://www.caij.qc.ca/">
+    <img class="ImageLogo" src="images/CAIJLogo.png" alt="Logo Caij">
+    Caij
+  </a>
+
+  <a href="https://www.mani.mess.gouv.qc.ca/">
+    <img class="ImageLogo" src="images/GqcLogo.png" alt="Logo ADEL">
+    Directives Aide sociale ADEL
+  </a>
+
+  <a href="https://www.cnesst.gouv.qc.ca/fr/organisation/documentation/acces-linformation/documents-servant-prise-decision/recueil-politiques-en-matiere-dindemnisation">
+    <img class="ImageLogo" src="images/CNESSTLogo.png" alt="Logo CNESST">
+    Directives CNESST
+  </a>
+
+  <a href="https://www.ivac.qc.ca/a-propos/Pages/lois-reglements-politiques.aspx">
+    <img class="ImageLogo" src="images/IVACLogo.png" alt="Logo IVAC">
+    Directives IVAC
+  </a>
+
+  <a href="https://lexius.justice.gouv.qc.ca/fr-FR/">
+    <img class="ImageLogo" src="images/GqcLogo.png" alt="Logo Greffe numérique">
+    Greffe numérique 
+  </a>
+
+  <a href="https://jurifamille.com/">
+    <img class="ImageLogo" src="images/JuriFamille.png" alt="Logo Jurifamille">
+    Jurifamille
+  </a>
+
+  <a href="https://www.legisquebec.gouv.qc.ca/">
+    <img class="ImageLogo" src="images/GqcLogo.png" alt="Logo Lois du Québec">
+    Lois du Québec
+  </a>
+
+  <a href="https://www.quebec.ca/justice-et-etat-civil/registres-legaux/registre-public-mesures-representation">
+    <img class="ImageLogo" src="images/GqcLogo.png" alt="Logo Registre public">
+    Registre public 
+  </a>
+
+  <a href="https://soquij.qc.ca/a/connexion?source=pop_expiration">
+    <img class="ImageLogo" src="images/SOQUIJLogo.png" alt="Logo Soquij">
+    Soquij
+  </a>
+</section>
+
+    </main>
+  </div>
+
+
+</body>
+
+<footer class="footer">
+  <p>&copy; 2025 Aide juridique - Potail de Navigation  </p>
+</footer>
+<script>
+  let selectedRegion = "";
+
+  const regionLinks = {
+    region1: [
+      "https://https://www.bing.com/search?q=color%20css&FORM=ARPSEC&PC=ARPL&PTAG=30532142",
+      "https://region1.example.com/intranet",
+      "https://region1.example.com/jurisevolution",
+      "https://region1.example.com/plateforme",
+      "https://region1.example.com/sharepoint"
+    ],
+    region2: [
+      "https://www.bing.com/search?q=color%20css&FORM=ARPSEC&PC=ARPL&PTAG=30532142",
+      "https://region2.example.com/intranet",
+      "https://region2.example.com/jurisevolution",
+      "https://region2.example.com/plateforme",
+      "https://region2.example.com/sharepoint"
+    ],
+    region3: [
+      "https://www.bing.com/search?q=color%20css&FORM=ARPSEC&PC=ARPL&PTAG=30532142",
+      "https://region3.example.com/intranet",
+      "https://region3.example.com/jurisevolution",
+      "https://region3.example.com/plateforme",
+      "https://region3.example.com/sharepoint"
+    ],
+    region4: [
+      "https://www.bing.com/search?q=color%20css&FORM=ARPSEC&PC=ARPL&PTAG=30532142",
+      "https://region4.example.com/intranet",
+      "https://region4.example.com/jurisevolution",
+      "https://region4.example.com/plateforme",
+      "https://region4.example.com/sharepoint"
+    ]
+  };
+
+  function updateLinks(region) {
+    selectedRegion = region;
+    const links = regionLinks[region];
+    if (links) {
+      document.getElementById("link1").href = links[0];
+      document.getElementById("link2").href = links[1];
+      document.getElementById("link3").href = links[2];
+      document.getElementById("link4").href = links[3];
+      document.getElementById("link5").href = links[4];
+      document.getElementById("error-message").style.display = "none";
+    }
+  }
+
+  function checkRegion(event) {
+    if (!selectedRegion) {
+      event.preventDefault();
+      document.getElementById("error-message").style.display = "block";
+      return false;
+    }
+    return true;
+  }
+</script>
+
