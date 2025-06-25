@@ -61,60 +61,6 @@ body::after {
     flex: 1;
 }
 
-/*
-.box {
-    background: rgba(245, 232, 232, 0.85);
-    border-left: 6px solid #34495e; 
-    height: 80%;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    padding: 20px;
-    border-radius: 18px;
-    width: 350px;
-    box-shadow: 12px 12px 28px rgba(16, 16, 16, 0.7);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    animation: fadeInUp 0.8s ease forwards;
-}
-
-.box:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.35);
-}
-
-.box h3 {
-    color: #7b241c; 
-    margin-bottom: 15px;
-    animation: pulse 3s infinite ease-in-out;
-    text-align: center;
-}
-
-.box a {
-    display: block;
-    margin: 8px 0;
-    padding: 10px;
-    background: linear-gradient(135deg, #04619f, #57b7f7); 
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-    font-weight: 500;
-    transition: transform 0.2s ease, background-color 0.3s ease;
-}
-
-.box a:hover {
-    background: #ffffff;
-    color: #3498db;
-    transform: scale(1.05);
-    font-weight: 600;
-}
-
-
-
-*/
-
-
-
-
-
 .box {
     background: rgb(255 255 255 / 81%);
     color: #ffffff;
